@@ -1,0 +1,24 @@
+<div class="todo">
+    <h1 class="text-center py-5 text-danger">
+        <div class="todo">
+            <h1 class="text-center py-5 text-danger">
+                My Todo-List
+            </h1>
+            <div class="container d-flex flex-column justify-content-center align-items-center">
+                <div class="inputAdd my-5">
+                    <input type="text">
+                </div>  
+                <div class="box p-5">
+                    <ul class="list">
+                        @for(item of todos;track item)
+                        {
+                            <li class="d-flex justify-content-between">
+                               <input type="checkbox">
+                               <p>{{item.title}}</p>
+                               <i class="bi bi-trash text-danger"></i>
+                            </li>
+                        }
+                    </ul> 
+                </div>
+            </div>
+        </div>
